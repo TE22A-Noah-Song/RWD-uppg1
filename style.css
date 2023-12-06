@@ -57,7 +57,7 @@ footer{
 {
     body{
     display: grid;
-    grid-template-columns: 1fr 5fr;  
+    grid-template-columns: 15% 85%;  
     grid-template-rows: 25vh 20vh 20vh 20vh 15vh;
     }
 
@@ -66,43 +66,80 @@ footer{
     grid-row: 1/2;
     height: 100%;
     padding-left: 350px;
-    margin-top: 50px;
+    
   
     }
 
     nav{
     grid-column:1/2;
     grid-row: 2/5;
-    padding-bottom: 600px;
-    margin-top: 100px;
+    padding-left:30px ;
+    padding-right:30px ;
+    padding-bottom: 490px;
+    margin-right: 20px;
     }
 
     main{
     grid-column:2/3;
     grid-row: 2/5;
-    margin-top: 150px;
+    margin-top: 20px;
+    }
+
+    article{
+    margin: 10px;
+    padding-bottom: 20px;
     }
 
     footer{
     grid-column: 1/3;
     grid-row: 5/6;
+    margin-bottom: 200px;
     }
 }
 @media only screen and (min-width:1008px) {
 
 body{
 display: grid;
-grid-template-columns:10% 90% ;
+grid-template-columns:15% 85% ;
 grid-template-rows:20% 60% 20% ;
 }
 header{
 grid-column: 1/3;
 grid-row: 1/2;
+padding-left: 450px;
+padding-bottom: 50px;
+
 }
 
 nav{
 grid-column: 1/2;
 grid-row: 2/3;
+padding-bottom: 370px;
+padding-left: 30px;
+padding-right: 0.1px;
+margin-top: 30px;
+}
+
+main{
+grid-column: 2/3;
+grid-row: 2/3;
+margin-left:15px;
+margin-right: 15px;
+padding-top: 5px;
+padding-left: 25px;
+padding-right: 25px;
+padding-bottom: 0.1px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+gap: 10px;
+}
+
+
+footer{
+grid-column:1/3;
+grid-row: 3/4;
+
 }
 
 }
